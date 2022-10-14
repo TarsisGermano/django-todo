@@ -24,5 +24,7 @@ urlpatterns = [
     # Delete todo
     path("todo/<int:item_id>/delete", DeleteTodo, name="deleteTodo"),
     # Edit todo
+    path("todo/<int:item_id>/edit", EditTodo, name="editTodo"),
     # Update todo
+    path("todo/<int:item_id>/update", UpdateTodoItem, name="updateTodo"),
 ]
